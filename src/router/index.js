@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import CarDetailsPage from '../pages/CarDetailsPage.vue'
+import HouseDetailsPage from '../pages/HouseDetailsPage.vue'
 import Home from '../pages/Home.vue'
 import House from '../pages/Houses.vue'
 
@@ -18,6 +19,10 @@ const routes = [
     path: '/', 
     name: 'House', 
     component: House
+  },{
+    path: '/house-details/:id',
+    name: 'HouseDetails',
+    component: HouseDetailsPage
   }
   //NOTE you got this. Creating a route is 100% something you can do. And did!
 ]
